@@ -6,16 +6,12 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ###
-POST {{host}}api/v1/transactions
+GET {{host}}api/v1/transactions
 Authorization: Bearer {{token}}
 Content-Type: application/json
 accept: application/vnd.api+json
 
 {
-  "error_if_duplicate_hash": false,
-  "apply_rules": false,
-  "fire_webhooks": true,
-  "group_title": "Split transaction title.",
   "transactions": [
     {
       "source_name": "Tinkoff Карта",
@@ -23,12 +19,7 @@ accept: application/vnd.api+json
       "type": "withdrawal",
       "date": "2021-10-03T12:46:47+01:00",
       "amount": "123.45",
-      "description": "Vegetables",
-      "currency_id": "12",
-      "destination_name": "Buy and Large",
-      "reconciled": false,
-      "tags": null,
-      "notes": "Some example notes"
+      "description": "Vegetables"
     }
   ]
 }

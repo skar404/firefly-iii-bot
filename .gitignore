@@ -2,8 +2,9 @@
 .env
 .venv
 .idea/
+tmp/
 http-client.private.env.json
-
+http_client/tinkoff.http
 
 ### VirtualEnv template
 # Virtualenv
